@@ -1,0 +1,66 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    h1{
+        @apply text-3xl;
+    }
+    h2{
+        @apply text-xl;
+    }
+}
+
+@layer components {
+  .tabBtn{
+    @apply inline-block rounded-t-lg border-b-0
+  }
+  .tabBtnHover{
+    @apply rounded-t-lg hover:border-b-2 hover:text-gray-600 hover:border-indigo-500 dark:hover:text-gray-300
+  }
+  .tabBtnActive{
+    @apply border-b-4 
+  }
+  .btn-blue{
+      @apply bg-indigo-500 text-white py-1 px-3 rounded-md hover:bg-cyan-500;
+  }
+
+  .btn-grey{
+    @apply inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-offset-2
+  }
+
+  .keyIn{
+    @apply mr-3 inline-block rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 
+  }
+
+  .toScroll{
+    @apply scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 overflow-x-scroll
+  }
+
+  .content-area{
+    @apply bg-red-50;
+  }
+}
+
+.btnGroup{
+  display:inline-block;
+}
+
+.min-h-70percent{
+  height: 70vh;
+}
+
+.shown{
+  width:2800px
+}
+
+.border-t-25{
+  border-top-width: 25px
+}
+
+.tabBtn a{
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+}
